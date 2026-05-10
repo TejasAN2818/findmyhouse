@@ -1,0 +1,128 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#f4f4f4;
+}
+
+.header{
+  background:#1e3a8a;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+.header h1{
+  font-size:40px;
+}
+
+.horizontal-scroll{
+  display:flex;
+  gap:15px;
+  overflow-x:auto;
+  padding:20px;
+}
+
+.scroll-card{
+  min-width:220px;
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.scroll-card img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+}
+
+.scroll-card h3,
+.scroll-card p{
+  padding:8px 10px;
+}
+
+.type-buttons{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  padding:20px;
+  flex-wrap:wrap;
+}
+
+.type-buttons button{
+  padding:10px 20px;
+  border:none;
+  border-radius:8px;
+  background:#ddd;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.type-buttons button.active{
+  background:#1e3a8a;
+  color:white;
+}
+
+.filters{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  padding:10px 20px 30px;
+}
+
+.filters select{
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  min-width:180px;
+}
+
+.room-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.room-card{
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.room-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.room-content{
+  padding:15px;
+}
+
+.room-content h2{
+  margin-bottom:10px;
+}
+
+.room-content p{
+  margin:6px 0;
+}
+
+.room-content button{
+  margin-top:10px;
+  width:100%;
+  padding:12px;
+  border:none;
+  background:#1e3a8a;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
